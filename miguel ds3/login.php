@@ -20,8 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($result->num_rows > 0) {
         echo "Login realizado com sucesso!";
-        header('Location: profile.html');
-        exit();
     } else {
         echo "Usuário ou senha incorretos.";
     }
